@@ -71,4 +71,3 @@ pipeline:
                       }
         delegateSelectors:
           - harness-delegate
-          - windows-amd64
