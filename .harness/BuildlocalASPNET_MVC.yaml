@@ -70,4 +70,4 @@ pipeline:
                           Write-Host "MSBuild NOT FOUND"
                       }
         delegateSelectors:
-          - harness-delegate
+          - windows-amd64
