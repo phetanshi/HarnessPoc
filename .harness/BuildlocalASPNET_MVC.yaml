@@ -70,4 +70,4 @@ pipeline:
                           Write-Host "MSBuild NOT FOUND"
                       }
         delegateSelectors:
-          - windows-amd64
+          - docker-delegate
