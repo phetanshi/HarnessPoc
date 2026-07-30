@@ -1,0 +1,71 @@
+pipeline:
+  name: Build-local-ASP.NET_MVC
+  identifier: BuildlocalASPNET_MVC
+  projectIdentifier: ASPNET_MVC_CI
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: GitHub_Connection
+        build: <+input>
+  stages:
+    - stage:
+        name: build_mvc
+        identifier: build_mvc
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          caching:
+            enabled: true
+            override: true
+            paths: []
+          buildIntelligence:
+            enabled: false
+          platform:
+            os: Windows
+            arch: Amd64
+          runtime:
+            type: Docker
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Verify Windows Runner
+                  identifier: Verify_Windows_Runner
+                  spec:
+                    shell: Powershell
+                    command: |-
+                      Write-Host "===== MACHINE ====="
+                      hostname
+
+                      Write-Host "===== USER ====="
+                      whoami
+
+                      Write-Host "===== CURRENT DIRECTORY ====="
+                      Get-Location
+
+                      Write-Host "===== OS ====="
+                      systeminfo | Select-Object -First 10
+
+                      Write-Host "===== GIT ====="
+                      git --version
+
+                      Write-Host "===== NUGET ====="
+                      nuget
+
+                      Write-Host "===== MSBUILD ====="
+
+                      $msbuild = Get-Command msbuild -ErrorAction SilentlyContinue
+
+                      if ($msbuild)
+                      {
+                          $msbuild.Source
+                          msbuild -version
+                      }
+                      else
+                      {
+                          Write-Host "MSBuild NOT FOUND"
+                      }
