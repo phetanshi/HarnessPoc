@@ -5,12 +5,16 @@ VisualStudioVersion = 17.14.36511.14 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocForHarness", "PocForHarness\PocForHarness.csproj", "{853811B2-B347-4CF1-B986-ACF36673A544}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{B324C6AA-BE08-40E2-8D0D-6A3D2DF1A77A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B324C6AA-BE08-40E2-8D0D-6A3D2DF1A77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B324C6AA-BE08-40E2-8D0D-6A3D2DF1A77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853811B2-B347-4CF1-B986-ACF36673A544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{853811B2-B347-4CF1-B986-ACF36673A544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853811B2-B347-4CF1-B986-ACF36673A544}.Release|Any CPU.ActiveCfg = Release|Any CPU
