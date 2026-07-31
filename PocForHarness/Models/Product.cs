@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HarnessPoc.Models
+namespace PocForHarness.Models
 {
     public class Product
     {

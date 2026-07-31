@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace HarnessPoc
+namespace PocForHarness
 {
     public class BundleConfig
     {

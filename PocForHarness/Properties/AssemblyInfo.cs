@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HarnessPoc")]
+[assembly: AssemblyTitle("PocForHarness")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HarnessPoc")]
+[assembly: AssemblyProduct("PocForHarness")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7f04d62c-ebd7-44a6-8fa4-da1a3d654447")]
+[assembly: Guid("d23eb9b0-3fd6-4c58-ab70-3fe360b23847")]
 
 // Version information for an assembly consists of the following four values:
 //
